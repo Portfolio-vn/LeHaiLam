@@ -1,0 +1,57 @@
+Added Component: Designator=BT1(DE PIN 18650 X2)
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH010812"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten"; Value = "H?p Ð? Pin 18650 Hàn M?ch DP 18650-HM-02"; VariantName = "[No Variations]"
+Added Component: Designator=C1(tu hoa 5mm)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH004655"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? Hóa 0.33uF 50V 5x11MM"; VariantName = "[No Variations]"
+Added Component: Designator=C2(tu hoa 5mm)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH006853"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "T? Hóa 0.1uF 50V"; VariantName = "[No Variations]"
+Added Component: Designator=LM1(TO220H1)
+Added Component: Designator=R1(tro vach 1w)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH006391"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? 5% 1w 10k"; VariantName = "[No Variations]"
+Added Component: Designator=SIM1(JP 1X7 CT)
+Added Pin To Net: NetName=GND Pin=BT1-2
+Added Pin To Net: NetName=GND Pin=BT1-2
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=+5 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=LM1-2
+Added Pin To Net: NetName=+5 Pin=LM1-3
+Added Pin To Net: NetName=+5 Pin=R1-1
+Added Pin To Net: NetName=GND Pin=SIM1-1
+Added Pin To Net: NetName=GND Pin=SIM1-6
+Added Pin To Net: NetName=+5 Pin=SIM1-7
+Added Pin To Net: NetName=NetBT1_1 Pin=BT1-1
+Added Pin To Net: NetName=NetBT1_1 Pin=BT1-1
+Added Pin To Net: NetName=NetBT1_1 Pin=C1-1
+Added Pin To Net: NetName=NetBT1_1 Pin=LM1-1
+Added Net: Name=NetBT1_1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=SIM1-3
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=RX Pin=SIM1-5
+Added Pin To Net: NetName=RX Pin=U1-24
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=SIM1-4
+Added Pin To Net: NetName=TX Pin=U1-25
+Added Net: Name=TX
+Added Member To Class: ClassName=MachDoNuoc Member=Component BT1 18650
+Added Member To Class: ClassName=MachDoNuoc Member=Component C1 0.33uF
+Added Member To Class: ClassName=MachDoNuoc Member=Component C2 0.1uF
+Added Member To Class: ClassName=MachDoNuoc Member=Component LM1 LM7805
+Added Member To Class: ClassName=MachDoNuoc Member=Component R1 10k
+Added Member To Class: ClassName=MachDoNuoc Member=Component SIM1 ModuleSimA7680C

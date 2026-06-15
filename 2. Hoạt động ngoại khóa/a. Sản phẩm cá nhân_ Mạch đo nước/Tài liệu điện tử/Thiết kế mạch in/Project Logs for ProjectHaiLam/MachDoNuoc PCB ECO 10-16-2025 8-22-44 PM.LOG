@@ -1,0 +1,6 @@
+Added Component: Designator=TDS1(TDSboard)
+Added Pin To Net: NetName=TDS Pin=TDS1-1
+Added Pin To Net: NetName=Temp Pin=TDS1-2
+Added Pin To Net: NetName=GND Pin=TDS1-3
+Added Pin To Net: NetName=+5 Pin=TDS1-4
+Added Member To Class: ClassName=MachDoNuoc Member=Component TDS1 TDSBOARD

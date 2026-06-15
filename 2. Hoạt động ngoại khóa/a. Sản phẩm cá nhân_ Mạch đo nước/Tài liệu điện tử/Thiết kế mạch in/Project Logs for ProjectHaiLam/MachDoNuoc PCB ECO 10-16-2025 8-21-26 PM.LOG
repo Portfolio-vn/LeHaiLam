@@ -1,0 +1,21 @@
+Added Component: Designator=oled1(Module SSD1306)
+Add Component: Footprint Not Found Model Name
+Added Component: Designator=U1(ESP32_Module)
+Added Pin To Net: NetName=+5 Pin=oled1-2
+Added Pin To Net: NetName=+5 Pin=U1-15
+Added Net: Name=+5
+Added Pin To Net: NetName=GND Pin=oled1-1
+Added Pin To Net: NetName=GND Pin=U1-14
+Added Pin To Net: NetName=GND Pin=U1-29
+Added Net: Name=GND
+Added Pin To Net: NetName=SCL Pin=oled1-3
+Added Pin To Net: NetName=SCL Pin=U1-17
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=oled1-4
+Added Pin To Net: NetName=SDA Pin=U1-20
+Added Net: Name=SDA
+Added Pin To Net: NetName=TDS Pin=U1-4
+Added Net: Name=TDS
+Added Pin To Net: NetName=Temp Pin=U1-28
+Added Net: Name=Temp
+Added Class: Name=MachDoNuoc

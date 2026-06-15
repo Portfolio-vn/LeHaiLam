@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=BT1-2
+Removed Pin From Net: NetName=GND Pin=BT1-2
+Removed Member From Class: ClassName=MachDoNuoc Member=BT1
+Added Pin To Net: NetName=GND Pin=BT2-N2
+Added Pin To Net: NetName=NetBT2_N1 Pin=BT2-N1
+Added Pin To Net: NetName=NetBT2_N1 Pin=BT2-P2
+Added Net: Name=NetBT2_N1
+Added Pin To Net: NetName=NetBT2_P1 Pin=BT2-P1
+Added Pin To Net: NetName=NetBT2_P1 Pin=S1-3
+Added Net: Name=NetBT2_P1
