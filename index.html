@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lê Hải Lâm — Engineering, Robotics & Leadership Portfolio</title>
+  <meta name="description" content="Portfolio of Lê Hải Lâm — Hanoi-Amsterdam High School student, robotics mechanical lead, engineering builder, and international award winner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+  <div class="grain"></div>
+  <div class="scroll-indicator"><div class="scroll-progress" id="scrollProgress"></div></div>
+
+  <aside class="side-nav" aria-label="Portfolio navigation">
+    <a class="brand-mark" href="#hero" aria-label="Back to top">
+      <span>HL</span>
+    </a>
+    <nav>
+      <a href="#philosophy" class="nav-item active"><i class="fa-solid fa-compass"></i><span>Philosophy</span></a>
+      <a href="#awards" class="nav-item"><i class="fa-solid fa-trophy"></i><span>Awards</span></a>
+      <a href="#project" class="nav-item"><i class="fa-solid fa-microchip"></i><span>Project</span></a>
+      <a href="#skills" class="nav-item"><i class="fa-solid fa-screwdriver-wrench"></i><span>Skills</span></a>
+      <a href="#leadership" class="nav-item"><i class="fa-solid fa-people-group"></i><span>Leadership</span></a>
+      <a href="#activities" class="nav-item"><i class="fa-solid fa-bolt"></i><span>Activities</span></a>
+      <a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hanoi-Amsterdam High School for the Gifted</p>
+          <h1>Lê Hải<br><span>Lâm</span></h1>
+          <p class="hero-role">Engineering Builder · Robotics Mechanical Lead · Chinese Major</p>
+          <p class="hero-desc">
+            I build engineering projects from idea to working prototype: mechanical structure, PCB design,
+            embedded control, IoT dashboards, and technical storytelling. My strongest interest is where
+            robotics, electronics, and real-world problem solving meet.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#project"><i class="fa-solid fa-arrow-down"></i> View project</a>
+            <a class="btn btn-ghost" href="project.html"><i class="fa-solid fa-up-right-from-square"></i> Project deep-dive</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="portrait-card">
+            <div class="portrait-orbit"></div>
+            <div class="portrait-initials">HL</div>
+            <div class="portrait-meta">
+              <h2>Lê Hải Lâm</h2>
+              <p>Grade 11 · Chinese Specialization</p>
+            </div>
+          </div>
+          <div class="metric-grid">
+            <div class="metric"><span>1540</span><small>SAT Score</small></div>
+            <div class="metric"><span>HSK5</span><small>Chinese Certificate</small></div>
+            <div class="metric"><span>Gold</span><small>INOVA Croatia 2025</small></div>
+            <div class="metric"><span>Gold</span><small>ICPC Korea 2026</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="philosophy">
+      <div class="container two-col">
+        <div class="section-kicker reveal">
+          <span>Why Engineering?</span>
+          <h2>My work starts with structure, then becomes a system.</h2>
+        </div>
+        <div class="prose-card reveal">
+          <p>
+            I approach engineering as a disciplined creative process. A strong idea is not enough;
+            it must be translated into dimensions, wiring, firmware, testing, and evidence.
+          </p>
+          <p>
+            Through robotics and independent hardware projects, I learned to balance three things:
+            mechanical reliability, electronic clarity, and a user interface that makes the system easy to understand.
+          </p>
+          <div class="info-strip">
+            <span><i class="fa-solid fa-location-dot"></i> Hanoi, Vietnam</span>
+            <span><i class="fa-solid fa-school"></i> Hanoi-Amsterdam HS</span>
+            <span><i class="fa-solid fa-envelope"></i> lamlhl2009@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="awards">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Recognition</p>
+          <h2>International awards & academic milestones</h2>
+        </div>
+        <div class="award-timeline">
+          <article class="timeline-card reveal" onclick="openModal('inova')">
+            <span class="timeline-year">2025</span>
+            <h3>Gold Medal — INOVA Croatia 2025</h3>
+            <p>International invention achievement connected to a smart railway safety monitoring system.</p>
+            <button class="mini-link">Open evidence <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+          <article class="timeline-card reveal" onclick="openModal('icpc')">
+            <span class="timeline-year">2026</span>
+            <h3>Gold Medal — ICPC Korea 2026</h3>
+            <p>Algorithmic thinking, teamwork, and programming performance in an international setting.</p>
+            <button class="mini-link">Open evidence <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+          <article class="timeline-card reveal" onclick="openModal('vex')">
+            <span class="timeline-year">2025–2026</span>
+            <h3>VEX Robotics — Innovate, Judge Award & Semi-finalist</h3>
+            <p>Mechanical/chassis leadership for team 24751A and competition robot development.</p>
+            <button class="mini-link">Open evidence <i class="fa-solid fa-arrow-right"></i></button>
+          </article>
+          <article class="timeline-card reveal">
+            <span class="timeline-year">2025–2026</span>
+            <h3>HSK5 & Hanoi Chinese Olympiad</h3>
+            <p>HSK5 certificate and Third Prize in Hanoi city-level Grade 12 Chinese competition.</p>
+          </article>
+        </div>
+
+        <!-- ACADEMIC CERTIFICATES GALLERY — kept from the previous layout -->
+        <div class="gallery-label"><i class="fas fa-certificate"></i> Academic Certificates &amp; Awards Gallery</div>
+        <div class="swiper acad-swiper">
+          <div class="swiper-wrapper" id="acadGallery">
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485919582_3e02121eaecf6c75262abb73999cd86b.jpg" alt="Academic Certificate 1" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485928623_b66e8842fc587a33d64855ec7eab8b81.jpg" alt="Academic Certificate 2" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485930882_23d98fed0023c3d3621fcf1d3818c75f.jpg" alt="Academic Certificate 3" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485939966_5762c844e5b578d3a8b421c31a5edd67.jpg" alt="Academic Certificate 4" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485940115_0fe9c7530e541bae8887a515d010f121.jpg" alt="Academic Certificate 5" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485946326_388d2288959bf652e9cf7e7876f8d951.jpg" alt="Academic Certificate 6" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485947922_b144502256f23c01a8669f080500f8c5.jpg" alt="Academic Certificate 7" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681485948476_2a2ee007c9857d0732ebeecb5cf326a5.jpg" alt="Academic Certificate 8" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/z7681486000033_1cb141b5c7230eb928bb1456881756ad.jpg" alt="Academic Certificate 9" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+            <div class="swiper-slide"><img src="2. Hoạt động ngoại khóa/c. Giải thưởng thành tích/Screenshot 2026-04-01 205218.png" alt="VEX Award" loading="lazy" onclick="openFullImg(this.src, this.alt)" style="cursor:zoom-in;"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="project">
+      <div class="container project-feature reveal">
+        <div class="project-copy">
+          <p class="eyebrow">Personal Project · 2025</p>
+          <h2>Lake Water Quality Sensor</h2>
+          <p>
+            A custom ESP32-based IoT system designed to measure water quality indicators and transmit data
+            to an online dashboard. The project combines PCB design, sensors, firmware, communication,
+            documentation, and demo media into a complete engineering portfolio item.
+          </p>
+          <div class="chip-row">
+            <span>ESP32</span><span>Altium Designer</span><span>DS18B20</span><span>pH</span><span>TDS</span><span>ThingSpeak</span><span>4G UART</span>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="openModal('sensor')"><i class="fa-solid fa-folder-open"></i> Open evidence</button>
+            <a class="btn btn-ghost" href="project.html"><i class="fa-solid fa-layer-group"></i> View case study</a>
+          </div>
+        </div>
+        <div class="sensor-terminal" aria-label="Interactive water quality simulation">
+          <div class="terminal-head"><span></span><span></span><span></span><b>live_quality_sim</b></div>
+          <div class="sensor-row">
+            <label>Temperature <span id="val-temp">25°C</span></label>
+            <input type="range" id="slider-temp" min="5" max="45" value="25">
+          </div>
+          <div class="sensor-row">
+            <label>pH <span id="val-ph">7.0</span></label>
+            <input type="range" id="slider-ph" min="0" max="14" step="0.1" value="7">
+          </div>
+          <div class="sensor-row">
+            <label>TDS <span id="val-tds">350 ppm</span></label>
+            <input type="range" id="slider-tds" min="0" max="1500" value="350">
+          </div>
+          <div class="quality-display">
+            <div class="quality-badge good" id="quality-badge">GOOD</div>
+            <div class="quality-text" id="quality-text">Water quality parameters are within a safe range.</div>
+          </div>
+          <div class="console-box" id="console-log">[SYSTEM] ESP32 sensor node initialized...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Competencies</p>
+          <h2>Technical stack & working style</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><i class="fa-solid fa-robot"></i><h3>Robotics Mechanics</h3><p>Chassis design, gear distribution, structural testing, weight balance, competition iteration.</p></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-microchip"></i><h3>Embedded Systems</h3><p>ESP32 firmware, sensor integration, GPIO control, UART/ADC workflows, live data logging.</p></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-diagram-project"></i><h3>PCB Design</h3><p>Altium Designer 22, schematic planning, 2D/3D PCB layout, documentation and hardware review.</p></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-code"></i><h3>Programming</h3><p>Algorithmic problem solving, contest practice, Python/C++ foundations and technical debugging.</p></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-language"></i><h3>Languages</h3><p>Vietnamese native, Chinese HSK5, academic English for technical documentation.</p></article>
+          <article class="skill-card reveal"><i class="fa-solid fa-pen-nib"></i><h3>Technical Storytelling</h3><p>Reports, project defense, teaching, public speaking, and explaining engineering ideas clearly.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Leadership</p>
+          <h2>Teams, clubs & community impact</h2>
+        </div>
+        <div class="leadership-grid">
+          <article class="lead-card reveal" onclick="openModal('steams')">
+            <span>Club President</span><h3>President of STEAMS Club</h3>
+            <p>Led a STEM community at Hanoi-Amsterdam, organized workshops, fairs, and peer learning activities.</p>
+          </article>
+          <article class="lead-card reveal" onclick="openModal('teach')">
+            <span>Outreach</span><h3>Robotics & AI Teaching Program</h3>
+            <p>Organized and taught a practical technology program for students at Nhuan Trach School, Phu Tho.</p>
+          </article>
+          <article class="lead-card reveal" onclick="openModal('speaker')">
+            <span>Mentorship</span><h3>Math Guest Speaker</h3>
+            <p>Shared study strategies and mathematical problem-solving methods at MASKA'25 and Pandorams 2025.</p>
+          </article>
+          <article class="lead-card reveal" onclick="openModal('film')">
+            <span>Creative Direction</span><h3>Chinese Division Film Director</h3>
+            <p>Directed and wrote the Chinese-major short film for Talent Festival 2025.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="activities">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Activities</p>
+          <h2>Extracurricular activities with clear roles and outcomes</h2>
+          <p>Each activity is written as a portfolio evidence block: role, organization, time, responsibility, and impact.</p>
+        </div>
+
+        <div class="filter-tabs reveal">
+          <button class="filter-tab active" onclick="filterActivities('all',this)">All</button>
+          <button class="filter-tab" onclick="filterActivities('stem',this)">STEM / Robotics</button>
+          <button class="filter-tab" onclick="filterActivities('leadership',this)">Leadership</button>
+          <button class="filter-tab" onclick="filterActivities('art',this)">Arts</button>
+          <button class="filter-tab" onclick="filterActivities('community',this)">Community</button>
+          <button class="filter-tab" onclick="filterActivities('exchange',this)">Exchange</button>
+        </div>
+
+        <div class="activities-grid">
+          <article class="activity-card reveal" data-cat="stem" onclick="openModal('vex')">
+            <div class="act-img" style="background:linear-gradient(135deg,#e0f2fe,#dbeafe);">
+              <i class="act-icon fas fa-robot" style="color:#1f3a5f;"></i>
+              <span class="act-badge">STEM / Robotics</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Chassis Captain — VEX Robotics Team 24751A</div>
+              <div class="act-org">Hanoi-Amsterdam High School</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025–2026</div>
+              <p class="act-desc">Led the mechanical side of the VEX V5 robot: chassis concept, CAD iteration, gear distribution, assembly review, stress testing, and competition troubleshooting. The team earned Innovate Award in the Northern qualifier, Judge Award, and National Semi-finalist recognition.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="stem" onclick="openModal('sensor')">
+            <div class="act-img" style="background:linear-gradient(135deg,#ccfbf1,#ecfeff);">
+              <i class="act-icon fas fa-water" style="color:#13977e;"></i>
+              <span class="act-badge">Maker Project</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">PCB Design — Lake Water Quality Sensor</div>
+              <div class="act-org">Independent Personal Project</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Designed a custom ESP32 PCB in Altium Designer 22 and integrated DS18B20 temperature, pH, TDS sensing, UART 4G communication, and ThingSpeak data upload. Deliverables include a report, 2D/3D board images, demo videos, and classroom evidence.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="leadership" onclick="openModal('steams')">
+            <div class="act-img" style="background:linear-gradient(135deg,#dcfce7,#f0fdf4);">
+              <i class="act-icon fas fa-users-cog" style="color:#16866f;"></i>
+              <span class="act-badge">Leadership</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">President — STEAMS Club</div>
+              <div class="act-org">Hanoi-Amsterdam High School</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Coordinated club operations, assigned tasks to core members, and supported hands-on engineering activities. The role highlights leadership in STEM education, workshop planning, and building a practical maker culture inside school.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="leadership" onclick="openModal('speaker')">
+            <div class="act-img" style="background:linear-gradient(135deg,#e0f2fe,#f8fafc);">
+              <i class="act-icon fas fa-chalkboard-teacher" style="color:#2b5b89;"></i>
+              <span class="act-badge">Mentorship</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Guest Speaker — MASKA'25 &amp; Pandorams 2025</div>
+              <div class="act-org">High School Help Kit · Hanoi-Amsterdam</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Invited as a mathematics speaker to share preparation strategies, problem-solving mindset, and exam experience with younger students. The activity shows academic communication, mentoring ability, and confidence in public speaking.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="leadership">
+            <div class="act-img" style="background:linear-gradient(135deg,#fff7ed,#fef3c7);">
+              <i class="act-icon fas fa-meteor" style="color:#b7792f;"></i>
+              <span class="act-badge">Teaching</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Head of Teaching Department — Astrotales: Atheris</div>
+              <div class="act-org">Amstronomy Astronomy Fair · Hanoi-Amsterdam</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Took responsibility for teaching-content preparation at the astronomy fair, helping translate scientific ideas into accessible activities for participants. This role demonstrates planning, explanation, and event-based learning design.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="art" onclick="openModal('film')">
+            <div class="act-img" style="background:linear-gradient(135deg,#e0e7ff,#f5f3ff);">
+              <i class="act-icon fas fa-film" style="color:#4b5f95;"></i>
+              <span class="act-badge">Arts</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Chief Director &amp; Screenwriter — Talent Festival Film</div>
+              <div class="act-org">Chinese Division · Hanoi-Amsterdam High School</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Directed and wrote the Chinese Division short film “我接起了电话，也接起了一整个青春。” The project required scriptwriting, team coordination, filming schedule control, editing decisions, and emotional storytelling.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="community" onclick="openModal('teach')">
+            <div class="act-img" style="background:linear-gradient(135deg,#fef9c3,#fff7ed);">
+              <i class="act-icon fas fa-laptop-code" style="color:#b7792f;"></i>
+              <span class="act-badge">Community</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Robotics &amp; AI Teaching Program</div>
+              <div class="act-org">Nhuan Trach Primary &amp; Secondary School · Phu Tho</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Helped organize a technology outreach activity for students in Phu Tho, introducing basic Robotics and AI concepts through beginner-friendly lessons. The activity connects technical interest with education and social contribution.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="community" onclick="openModal('youth')">
+            <div class="act-img" style="background:linear-gradient(135deg,#e0f2fe,#f8fafc);">
+              <i class="act-icon fas fa-hand-holding-heart" style="color:#2b5b89;"></i>
+              <span class="act-badge">Community</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Expanded Youth Union Executive Committee &amp; The 1% Fund</div>
+              <div class="act-org">Hanoi-Amsterdam High School</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2025</div>
+              <p class="act-desc">Participated in school-level youth organization work and supported logistics for The 1% Fund. The role involved coordination, event support, and community-service operations rather than only passive participation.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="exchange">
+            <div class="act-img" style="background:linear-gradient(135deg,#fee2e2,#fff1f2);">
+              <i class="act-icon fas fa-route" style="color:#b45353;"></i>
+              <span class="act-badge">Exchange</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Red Journey — Guangxi, China</div>
+              <div class="act-org">Hanoi-Amsterdam Student Representative</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> January 2026</div>
+              <p class="act-desc">Selected as one of the student representatives of Hanoi-Amsterdam for the “Hành trình đỏ” exchange program in Guangxi, China, joining the school delegation and representing the Chinese-specialization student community.</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal" data-cat="exchange">
+            <div class="act-img" style="background:linear-gradient(135deg,#f1f5f9,#e2e8f0);">
+              <i class="act-icon fas fa-envelope-open-text" style="color:#4b6684;"></i>
+              <span class="act-badge">Exchange</span>
+            </div>
+            <div class="act-body">
+              <div class="act-title">Vietnam Student Representative Letter</div>
+              <div class="act-org">Hanoi-Amsterdam &amp; FLSS Student Group</div>
+              <div class="act-time"><i class="fas fa-calendar-alt"></i> 2026</div>
+              <p class="act-desc">Represented Vietnamese students in a letter-writing activity connected to China–Vietnam youth exchange. This item strengthens the profile’s language, diplomacy, and cross-cultural communication dimension.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Open to robotics, engineering, and academic opportunities.</h2>
+        <p>Feel free to reach out for collaboration, technical discussion, or portfolio review.</p>
+        <div class="contact-grid">
+          <a href="mailto:lamlhl2009@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span><b>lamlhl2009@gmail.com</b></a>
+          <div><i class="fa-solid fa-school"></i><span>School</span><b>Hanoi-Amsterdam HS</b></div>
+          <div><i class="fa-solid fa-location-dot"></i><span>Location</span><b>Hanoi, Vietnam</b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <b>Lê Hải Lâm</b>
+      <span>Engineering & Robotics Portfolio · 2026</span>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="mainModal" onclick="handleModalClick(event)">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+      <div class="modal-media-area" id="modalMedia"></div>
+      <div class="modal-thumbs" id="modalThumbs"></div>
+      <div class="modal-info">
+        <div class="modal-cat-badge" id="modalCat">Category</div>
+        <h2 class="modal-title" id="modalTitle">Title</h2>
+        <div class="modal-org" id="modalOrg"></div>
+        <div class="modal-time-row"><i class="fas fa-calendar-alt"></i><span id="modalTime"></span></div>
+        <div class="modal-desc" id="modalDesc"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="imgLightbox" onclick="handleLbClick(event)">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <span class="lightbox-nav prev" id="lbPrev" onclick="changeLbImg(-1, event)">&#8249;</span>
+    <span class="lightbox-nav next" id="lbNext" onclick="changeLbImg(1, event)">&#8250;</span>
+    <img id="lbImg" src="" alt="">
+    <div id="lbCaption" class="lightbox-caption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

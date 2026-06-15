@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lake Water Quality Sensor — Lê Hải Lâm</title>
+  <meta name="description" content="Project case study: ESP32 water quality sensor system by Lê Hải Lâm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="project-page">
+  <div class="grain"></div>
+  <div class="scroll-indicator"><div class="scroll-progress" id="scrollProgress"></div></div>
+
+  <header class="top-bar">
+    <a href="index.html" class="top-brand"><span>HL</span><b>Lê Hải Lâm</b></a>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#documents">Files</a>
+      <a href="index.html" class="btn btn-primary small"><i class="fa-solid fa-arrow-left"></i> Back</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero section">
+      <div class="container project-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Personal Project · 2025</p>
+          <h1>Lake Water<br><span>Quality Sensor</span></h1>
+          <p class="hero-desc">
+            An ESP32-based environmental monitoring node that measures water temperature,
+            pH, and TDS, then sends data through IoT connectivity for remote observation.
+          </p>
+          <div class="chip-row">
+            <span>ESP32</span><span>Custom PCB</span><span>DS18B20</span><span>pH Sensor</span><span>TDS Sensor</span><span>ThingSpeak</span><span>4G UART</span>
+          </div>
+        </div>
+        <div class="case-card reveal">
+          <h2>Project brief</h2>
+          <p><b>Goal:</b> Build a practical sensing device for lake/water quality monitoring.</p>
+          <p><b>Output:</b> PCB design, working prototype, demo video, report, and technical evidence.</p>
+          <p><b>Focus:</b> Hardware integration, signal measurement, data transmission, and engineering documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container two-col">
+        <div class="section-kicker reveal">
+          <span>Problem & solution</span>
+          <h2>From raw sensor readings to a readable monitoring workflow.</h2>
+        </div>
+        <div class="prose-card reveal">
+          <p>
+            Water quality can change quickly because of temperature shifts, dissolved solids,
+            pollution sources, and biological activity. The project turns these variables into
+            readable digital signals and sends them to a monitoring dashboard.
+          </p>
+          <p>
+            The core engineering challenge is not only connecting sensors, but designing a clear
+            path from measurement to transmission: sensor probe → ESP32 ADC / 1-Wire → data processing →
+            ThingSpeak / communication module → evidence and visualization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="architecture">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">System architecture</p>
+          <h2>Hardware blocks</h2>
+        </div>
+        <div class="arch-grid">
+          <article class="arch-card reveal"><i class="fa-solid fa-microchip"></i><h3>ESP32 MCU</h3><p>Main controller for sensing, processing, and communication.</p></article>
+          <article class="arch-card reveal"><i class="fa-solid fa-temperature-half"></i><h3>DS18B20</h3><p>1-Wire digital temperature measurement for water environment.</p></article>
+          <article class="arch-card reveal"><i class="fa-solid fa-vial"></i><h3>pH Input</h3><p>Analog signal acquisition to estimate acidity / alkalinity.</p></article>
+          <article class="arch-card reveal"><i class="fa-solid fa-water"></i><h3>TDS Input</h3><p>ADC-based dissolved solids monitoring.</p></article>
+          <article class="arch-card reveal"><i class="fa-solid fa-signal"></i><h3>4G / IoT</h3><p>UART AT command workflow and online data publishing.</p></article>
+          <article class="arch-card reveal"><i class="fa-solid fa-diagram-project"></i><h3>Custom PCB</h3><p>Altium 2D/3D board design and structured wiring.</p></article>
+        </div>
+
+        <div class="flow-diagram reveal">
+          <div class="flow-node"><i class="fa-solid fa-droplet"></i><span>Sensors</span><small>Temp · pH · TDS</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node"><i class="fa-solid fa-microchip"></i><span>ESP32</span><small>ADC · 1-Wire</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node"><i class="fa-solid fa-code"></i><span>Processing</span><small>Normalize data</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node"><i class="fa-solid fa-cloud-arrow-up"></i><span>Dashboard</span><small>ThingSpeak / 4G</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2>PCB design & classroom evidence</h2>
+        </div>
+        <div class="gallery-grid">
+          <img class="zoomable reveal" src="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Tài liệu điện tử/Thiết kế mạch in/2D mạch đo nước HL.png" alt="PCB 2D Layout">
+          <img class="zoomable reveal" src="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Tài liệu điện tử/Thiết kế mạch in/3D mạch đo nước HL.png" alt="PCB 3D Render">
+          <img class="zoomable reveal" src="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Hình ảnh công việc trên lớp/z7158101293315_96d463fceea724faece941f008f82a92.jpg" alt="Classroom work photo">
+          <img class="zoomable reveal" src="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Hình ảnh công việc trên lớp/z7172406543658_72006c7eca6f5016dd2b94bfce67feea.jpg" alt="Classroom work photo">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="documents">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Files</p>
+          <h2>Project documents & media</h2>
+        </div>
+        <div class="docs-grid">
+          <a class="doc-card reveal" href="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Báo cáo/Bao_cao_Hai_Lam.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span><b>Project Report</b><small>Bao_cao_Hai_Lam.pdf</small></span></a>
+          <a class="doc-card reveal" href="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Video thuyết trình/SPCN Hải Lâm.mp4" target="_blank"><i class="fa-solid fa-film"></i><span><b>Presentation Video</b><small>SPCN Hải Lâm.mp4</small></span></a>
+          <a class="doc-card reveal" href="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Video thuyết trình/638413705145041321_copy.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span><b>Presentation Slides</b><small>PDF file</small></span></a>
+          <a class="doc-card reveal" href="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Tài liệu điện tử/Thiết kế mạch in/SPCN_Hai_Lam.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span><b>PCB Document 1</b><small>SPCN_Hai_Lam.pdf</small></span></a>
+          <a class="doc-card reveal" href="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Tài liệu điện tử/Thiết kế mạch in/SPCN_Hai_Lam1.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span><b>PCB Document 2</b><small>SPCN_Hai_Lam1.pdf</small></span></a>
+          <a class="doc-card reveal" href="2. Hoạt động ngoại khóa/a. Sản phẩm cá nhân_ Mạch đo nước/Tài liệu điện tử/Thiết kế mạch in/SPCN_Hai_Lam108.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span><b>PCB Document 3</b><small>SPCN_Hai_Lam108.pdf</small></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="imgLightbox" onclick="handleLbClick(event)">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <span class="lightbox-nav prev" id="lbPrev" onclick="changeLbImg(-1, event)">&#8249;</span>
+    <span class="lightbox-nav next" id="lbNext" onclick="changeLbImg(1, event)">&#8250;</span>
+    <img id="lbImg" src="" alt="">
+    <div id="lbCaption" class="lightbox-caption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
